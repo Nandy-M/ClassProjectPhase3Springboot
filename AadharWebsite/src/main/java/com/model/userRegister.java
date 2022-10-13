@@ -20,8 +20,38 @@ public class userRegister {
 	private String dob;
 	private String address;
 	private String emailid;
+	private String status;
 	private String phno;
 	private String gender;
+	private String aadhaarNum;
+	private Boolean newCardRequest;
+	private Boolean duplicateCardRequest;
+	
+	public String getAadhaarNum() {
+		return aadhaarNum;
+	}
+	public void setAadhaarNum(String aadhaarNum) {
+		this.aadhaarNum = aadhaarNum;
+	}
+	public Boolean getNewCardRequest() {
+		return newCardRequest;
+	}
+	public void setNewCardRequest(Boolean newCardRequest) {
+		this.newCardRequest = newCardRequest;
+	}
+	public Boolean getDuplicateCardRequest() {
+		return duplicateCardRequest;
+	}
+	public void setDuplicateCardRequest(Boolean duplicateCardRequest) {
+		this.duplicateCardRequest = duplicateCardRequest;
+	}
+	
+	public String getStatus() {
+		return status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
+	}
 	public int getId() {
 		return id;
 	}
@@ -67,9 +97,11 @@ public class userRegister {
 	}
 	@Override
 	public String toString() {
-		return "user [id=" + id + ", name=" + name + ", dob=" + dob + ", address=" + address + ", emailid=" + emailid
-				+ ", phno=" + phno + ", gender=" + gender + "]";
+		return "userRegister [id=" + id + ", name=" + name + ", dob=" + dob + ", address=" + address + ", emailid="
+				+ emailid + ", phno=" + phno + ", gender=" + gender + ", aadhaarNum=" + aadhaarNum + ", newCardRequest="
+				+ newCardRequest + ", duplicateCardRequest=" + duplicateCardRequest + ", status=" + status + "]";
 	}
+	
 	
 	
 	
